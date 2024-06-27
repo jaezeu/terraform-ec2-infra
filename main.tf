@@ -3,7 +3,7 @@ resource "aws_instance" "public" {
   instance_type               = "t2.micro"
   subnet_id                   = "subnet-0cc94b815da8f0c95"   #ID of 1 of the public subnets
   associate_public_ip_address = true
-  key_name                    = "jazeel-key-pair"
+  key_name                    = "jazeel-new-keypair"
   vpc_security_group_ids = [aws_security_group.allow_ssh.id]
   
   tags = {
