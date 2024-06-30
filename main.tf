@@ -19,7 +19,7 @@ resource "aws_security_group" "allow_ssh" {
 
 resource "aws_vpc_security_group_ingress_rule" "allow_tls_ipv4" {
   security_group_id = aws_security_group.allow_ssh.id
-  cidr_ipv4         = "116.89.1.215/32"   #Add your own public IP here. Get it from whatismyip.com. Add /32
+  cidr_ipv4         = ""   #Add your own public IP here. Get it from whatismyip.com. Add /32
   from_port         = 22
   ip_protocol       = "tcp"
   to_port           = 22
