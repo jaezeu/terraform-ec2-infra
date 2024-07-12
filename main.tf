@@ -1,5 +1,5 @@
 resource "aws_instance" "public" {
-  ami                         = data.aws_ami.al2.id
+  ami                         = data.aws_ami.amazon2023.id
   instance_type               = "t2.micro"
   subnet_id                   = flatten(data.aws_subnets.public.ids)[0] #ID of 1 of the public subnets
   associate_public_ip_address = true

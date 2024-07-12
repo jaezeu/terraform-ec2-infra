@@ -2,7 +2,7 @@ data "aws_availability_zones" "available" {
   state = "available"
 }
 
-data "aws_ami" "amazon2" {
+data "aws_ami" "amazon2023" {
   most_recent = true
 
   filter {
